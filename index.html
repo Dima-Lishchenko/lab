@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lab Beauty studio by Irina Luchistaya | Main page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="plugins/lightbox.min.css">
+</head>
+<body>
+
+<div class="main">
+
+    <header class="header">
+        <div class="info">
+                <a href="index.html" class="info__logo"></a>
+            <div class="info__text">
+                <p class="time">Режим работы: с 8:00 до 20:00, пн-вс.</p>
+                <p class="address">г. Бровары, ул.Cимоненка, 117</p>
+            </div>
+            <div class="info__tel">
+                <i class="fas fa-phone-square"></i>
+
+                <a title="Viber" href="viber://add?number=380962279487">
+                    <p>+38 (096) 227-94-87</p>
+                </a>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            <p>Lab. Beauty</p>
+            <input type="checkbox" id="burger" onclick="burgerToggle()">
+            <label for="burger">
+                <div id="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </label>
+
+            <div class="menu__container">
+                <a href="#certificate">подарочный сертификат</a>
+                <a href="#services">услуги</a><span>~</span>
+
+                <a href="#news">акции</a><span>~</span>
+
+                <a href="#galary">галерея</a><span>~</span>
+
+                <a href="#counts">Преимущества</a><span>~</span>
+
+                <a href="#team">Наша команда</a><span>~</span>
+
+                <a href="#contacts">контакты</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="welcome" id="welcome">
+        <!--<video autoplay muted loop id="myVideo">-->
+            <!--<source src="img/татуаж.mp4" >-->
+            <!--Your browser does not support HTML5 video.-->
+        <!--</video>-->
+        <div class="container">
+            <h1>Студия красоты Lab.Beauty</h1>
+            <h2>от Ирины Лучистой</h2>
+            <a href="#contacts"><button type="button">Проконсультироваться</button></a>
+        </div>
+
+    </section>
+
+
+    <section class="certificate" id="certificate">
+        <div class="container">
+            <div class="container__photo ">
+
+            </div>
+            <div class="container__text">
+                <i class="fas fa-gift"></i>
+                <div class="info">
+                    <h3>Подарочный сертификат</h3>
+                    <p>Подарите своим близким роскошный и универсальный подарок. Наши подарочные сертификаты красиво оформлены и запечатаны в подарочный конверт!</p>
+                    <p>Мы предлагаем на выбор следующие сертификаты:</p>
+                    <ul>
+                        <li>500 грн</li>
+                        <li>1000 грн</li>
+                        <li>2000 грн</li>
+                    </ul>
+                    <p class="delivery">Возможна доставка!</p>
+                </div>
+                <a href="#contacts"><button type="button">Оформить</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services" id="services">
+        <h2>Услуги</h2>
+
+        <div class="services__content content">
+            <div class="content__item, item">
+                <div class="item__img">
+                    <a href="">
+                        <img src="img/services/tattoo.jpg" alt="">
+                    </a>
+                </div>
+                <p class="name">Перманентный макияж</p>
+
+                <p class="price">1800 грн</p>
+                <a href=""><button type="button">Подробнее</button></a>
+            </div>
+            <div class="content__item, item">
+                <div class="item__img">
+                    <a href="">
+                        <img src="img/services/manicure.jpg" alt="">
+                    </a>
+                </div>
+                <p class="name">Маникюр</p>
+
+                <p class="price">от 100 грн</p>
+                <a href=""><button type="button">Подробнее</button></a>
+            </div>
+            <div class="content__item, item">
+                <div class="item__img">
+                    <a href="">
+                        <img src="img/services/footcare.jpg" alt="">
+                    </a>
+                </div>
+                <p class="name">Педикюр</p>
+
+                <p class="price">от 175 грн</p>
+                <a href=""><button type="button">Подробнее</button></a>
+            </div>
+            <div class="content__item, item">
+                <div class="item__img">
+                    <a href="">
+                        <img src="img/services/eyelash.jpg" alt="">
+                    </a>
+                </div>
+                <p class="name">Ламинирование ресниц</p>
+
+                <p class="price">450 грн</p>
+                <a href=""><button type="button">Подробнее</button></a>
+            </div>
+            <div class="content__item, item">
+                <div class="item__img">
+                    <a href="">
+                        <img src="img/services/parafin.jpg" alt="">
+                    </a>
+                </div>
+                <p class="name">Парафинотерапия</p>
+
+                <p class="price">от 80 грн</p>
+                <a href=""><button type="button">Подробнее</button></a>
+            </div>
+            <div class="content__item, item">
+                <div class="item__img">
+                    <a href="">
+                        <img src="img/services/coloring.jpg" alt="">
+                    </a>
+                </div>
+                <p class="name">Окрашивание ресниц/бровей</p>
+
+                <p class="price">от 100 грн</p>
+                <a href=""><button type="button">Подробнее</button></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="questions" id="questions">
+        <div class="questions__container">
+            <p class="title">Все еще остались вопросы?</p>
+            <p class="contact">Перейдите по ссылке ниже или свяжитесь с нами:  +38 (096) 227-94-87</p>
+            <a href="#contacts">
+                <button type="button">Перейти</button>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="news" id="news">
+        <h1>Новости и акции</h1>
+        <div class="accordion">
+            <div class="accordion__item item">
+                <div class="item__head">
+                    <p>Нужны модели!</p>
+                </div>
+                <div class="item__body">
+                    <p>Приглашаются модели на бесплатный татуаж губ, бровей и глаз. Мастер: Ирина Лучистая</p>
+                </div>
+            </div>
+            <div class="accordion__item item">
+                <div class="item__head">
+                    <p>Весенние акции</p>
+                </div>
+                <div class="item__body">
+                    <ol>
+                        <li><b>Комплекс:</b> маникюр, педикюр, 2 гель-лака и снятие гель-лака  за 1200 грн. </li>
+                        <li>Знакомство с новым мастером маникюра Алёной! СКИДКА 30% на первую процедуру</li>
+                        <li>При записи на уход за лицом коррекция бровей нитью в ПОДАРОК!</li>
+                        <li>Укладка в ПОДАРОК при лечении волос!</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="accordion__item item">
+                <div class="item__head">
+                    <p>Спец. предложение!</p>
+                </div>
+                <div class="item__body">
+                    <p>Хорошее настроение и печеньки в подарок!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="galary" id="galary">
+        <h1>ГАЛЕРЕЯ</h1>
+        <div class="galary__content content">
+            <div class="content__item">
+                <a href="img/work/1.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/1.jpg" alt="" ></a></div>
+            <div class="content__item">
+                <a href="img/work/2.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/2.jpg" alt="" ></a></div>
+            <div class="content__item">
+                <a href="img/work/3.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/3.jpg" alt="" ></a></div>
+            <div class="content__item">
+                <a href="img/work/4.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/4.jpg" alt="" ></a></div>
+            <div class="content__item">
+                <a href="img/work/5.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/5.jpg" alt="" ></a></div>
+            <div class="content__item">
+                <a href="img/work/6.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/6.jpg" alt="" ></a></div>
+            <div class="content__item">
+                <a href="img/work/7.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/7.jpg" alt="" ></a></div>
+            <div class="content__item">
+                <a href="img/work/8.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/8.jpg" alt="" ></a></div>
+            <div class="content__item">
+                <a href="img/work/9.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/9.jpg" alt="" ></a></div>
+            <div class="content__item">
+                <a href="img/work/10.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/10.jpg" alt="" ></a></div>
+            <div class="content__item">
+                <a href="img/work/11.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/11.jpg" alt="" ></a></div>
+            <div class="content__item">
+                <a href="img/work/12.jpg" data-lightbox="galary" data-title="Optional caption."><img src="img/work/12.jpg" alt="" ></a></div>
+        </div>
+    </section>
+
+
+    <!-- <section class="team" id="team">СПЕЦИАЛИСТЫ</section> -->
+
+    <section class="counts" id="counts">
+        <div class="container">
+            <div class="container__item">
+                <div class="circle">
+                    <span class="spincrement">6549</span>
+                </div>
+                <p class="label">Подписчиков</p>
+            </div>
+            <div class="container__item">
+                <div class="circle">
+                    <span class="spincrement">4783</span>
+                </div>
+                <p class="label">Нарощенных бровей</p>
+            </div>
+            <div class="container__item">
+                <div class="circle">
+                    <span class="spincrement">100</span>
+                    <span>%</span>
+                </div>
+                <p class="label">Довольных клиентов</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contacts" id="contacts">
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d4519.7506603028405!2d30.787445730393582!3d50.52256229594977!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x40d4d97516ac9bd7%3A0xe4c7563b60b133ef!2sLab+Beauty+Studio+by+Irina+Luchistaya%2C+Vulytsya+Vasylya+Symonenka%2C+117%2C+Brovary%2C+Kyivs&#39;ka+oblast%2C+07400!3m2!1d50.523135599999996!2d30.7876747!5e0!3m2!1sen!2sua!4v1522612981538" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>        <div class="container">
+            <div class="container__title">
+                <p>Контакты</p>
+            </div>
+            <div class="container__dest">
+                <p>
+                    <span>Адрес:</span>
+                    <span>г. Бровары, ул. Симоненка, 117</span>
+                </p>
+                <p>
+                    <span>Тел:</span>
+                    <span>+38 (096) 227-94-87</span>
+                </p>
+                <p>
+                    <span>E-mail:</span>
+                    <span>Lab.beauty.studio@gmail.com</span>
+                </p>
+                <p>
+                    <span>Режим работы:</span>
+                    <span>8:00 - 20:00, ежедневно.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <footer class="footer" id="footer">
+        <div class="info">
+            <a href="index.html" class="info__logo"></a>
+            <div class="info__text">
+                <p class="time">Lab Beauty Studio by Irina Luchistaya</p>
+                <p class="address"></p>
+            </div>
+            <div class="info__tel">
+
+                <a title="Viber" href="viber://add?number=380962279487">
+                    <p>+38 (096) 227-94-87</p>
+                </a>
+
+                <div class="nets">
+                    <div class="insta"><a href=""><i class="fab fa-instagram"></i></a></div>
+                    <div class="facebook"><a href=""><i class="fab fa-facebook-f"></i></a></div>
+                    <div class="viber"><a href=""><i class="fab fa-viber"></i></a></div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/jquery.spincrement.js"></script>
+<script src="js/main.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+</body>
+</html>

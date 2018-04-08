@@ -1,0 +1,932 @@
+@import 'mixins.sass'
+@import "variables"
+
+body
+  padding: 0
+  margin: 0 auto
+  max-width: 1200px
+
+*
+  box-sizing: border-box
+
+#go-top
+  position: fixed
+  bottom: 75px
+  right: 6vw
+  text-align: center
+  cursor: pointer
+  display: none
+  width: 90px
+  height: 30px
+  //background: #a365c2
+  background-color: rgba(152, 148, 148, 0.61)
+  color: white
+  line-height: 30px
+  border-radius: 10px
+
+  @media screen and (min-width: 768px)
+    right: 3vw
+    bottom: 120px
+
+  @media screen and (min-width: 1150px)
+    right: 28px
+    bottom: 50px
+
+  &:hover
+    cursor: pointer
+    background: #333
+    color: #fff
+
+
+.main
+  width: 100%
+  position: relative
+  margin: 0 auto
+  border: 1px solid black
+  font-family: Roboto, Helvetica, Verdana, sans-serif
+
+  section
+    position: relative
+    min-height: 70vw
+    width: 100%
+    border: 1px solid black
+
+    @media screen and (min-width: 768px)
+      min-height: 500px
+
+  .header, .footer
+    text-align: center
+
+    .info
+      margin-bottom: 25px
+
+      @media screen and (min-width: 768px)
+        +flex(unset, space-evenly)
+        margin: 0
+
+      &__logo
+        display: block
+        margin-top: 15px
+        background-image: url(../img/lb_logo2.png)
+        height: 12vw
+        width: 100%
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+        transition: 0.3s
+
+        &:hover
+          transform: scale(1.05)
+          cursor: pointer
+
+        @media screen and (min-width: 768px)
+          width: 85px
+          height: 65px
+          margin-right: 15px
+
+        @media screen and (min-width: 1150px)
+          width: 90px
+          height: 80px
+
+      &__text
+        margin: 10px 0
+
+        @media screen and (min-width: 768px)
+          order: -1
+
+        & *
+          font-size: 16px
+          font-family: sans-serif
+
+          @media screen and (min-width: 768px)
+            font-size: 18px
+
+          @media screen and (min-width: 1150px)
+            font-size: 20px
+
+        p.time
+          line-height: 1.5
+          letter-spacing: .3px
+          width: 295px
+          margin: 0 auto
+
+          @media screen and (min-width: 768px)
+            width: 300px
+
+          //@media screen and (min-width: 1150px)
+          //  width: 378px
+
+        p.address
+          margin: 5px 0px 10px 0
+          //color: darkorchid
+          color: #0886e3
+
+      &__tel
+        +flex(center, center)
+
+        svg
+          font-size: 4vw
+          margin-right: 7px
+          transform: rotate(90deg)
+
+          @media screen and (min-width: 768px)
+            font-size: 24px
+            margin: 5px 8px 0 0
+
+          @media screen and (min-width: 1150px)
+            font-size: 26px
+            margin: 8px 8px 0 0
+
+
+        a
+          color: black
+          font-size: 18px
+          opacity: 0.8
+          border-bottom: 1px solid
+          text-decoration: none
+          
+          &:hover
+            opacity: 1
+            color: #318ebd
+            transition: 0.3s
+
+          p
+            margin: 0
+            font-size: 21px
+            font-family: monospace
+
+            @media screen and (min-width: 768px)
+              font-size: 23px
+
+            @media screen and (min-width: 1150px)
+              font-size: 25px
+
+    .menu
+      max-width: 1498px
+      position: relative
+      min-height: 62px
+      //background-color: rgba(162, 6, 173, 0.76)
+      background-color: rgba(0, 0, 0, 0.76)
+
+      &.fixed
+        position: fixed
+        top: 0
+        //width: 98.65%
+        z-index: 1
+
+      @media screen and (min-width: 768px)
+        display: flex
+        align-items: center
+
+      p
+        position: absolute
+        color: white
+        left: 5vw
+        top: 1vh
+        font-size: 16px
+        font-weight: bold
+        
+        @media screen and (min-width: 768px)
+          display: none
+
+      label
+        display: block
+
+        @media screen and (min-width: 768px)
+            display: none
+
+      #nav-icon
+        //width: 40px
+        width: 33px
+        //height: 45px
+        height: 35px
+        position: absolute
+        right: 30px
+        top: 10px
+        -webkit-transform: rotate(0deg)
+        -moz-transform: rotate(0deg)
+        -o-transform: rotate(0deg)
+        transform: rotate(0deg)
+        -webkit-transition: .5s ease-in-out
+        -moz-transition: .5s ease-in-out
+        -o-transition: .5s ease-in-out
+        transition: .5s ease-in-out
+        cursor: pointer
+
+      #nav-icon span
+        display: block
+        position: absolute
+        //height: 5px
+        height: 4px
+        width: 100%
+        background: white
+        border-radius: 9px
+        opacity: 1
+        left: 0
+        -webkit-transform: rotate(0deg)
+        -moz-transform: rotate(0deg)
+        -o-transform: rotate(0deg)
+        transform: rotate(0deg)
+        -webkit-transition: .25s ease-in-out
+        -moz-transition: .25s ease-in-out
+        -o-transition: .25s ease-in-out
+        transition: .25s ease-in-out
+
+      #nav-icon span:nth-child(1)
+        //top: 7px
+        top: 12px
+
+      #nav-icon span:nth-child(2), #nav-icon span:nth-child(3)
+        top: 21px
+
+      #nav-icon span:nth-child(4)
+        //top: 35px
+        top: 30px
+
+      #nav-icon.open span:nth-child(1)
+        top: 18px
+        width: 0%
+        left: 50%
+
+      #nav-icon.open span:nth-child(2)
+        -webkit-transform: rotate(45deg)
+        -moz-transform: rotate(45deg)
+        -o-transform: rotate(45deg)
+        transform: rotate(45deg)
+
+      #nav-icon.open span:nth-child(3)
+        -webkit-transform: rotate(-45deg)
+        -moz-transform: rotate(-45deg)
+        -o-transform: rotate(-45deg)
+        transform: rotate(-45deg)
+
+      #nav-icon.open span:nth-child(4)
+        top: 18px
+        width: 0%
+        left: 50%
+
+      input
+        display: none
+
+        &#burger:checked ~ .menu__container
+          visibility: visible
+          height: 275px
+          padding-bottom: 20px
+          transition:  all 1s
+
+
+      &__container
+        padding-top: 62px
+        +flex(center, unset)
+        flex-direction: column
+        visibility: hidden
+        height: 0
+        transition: 1s
+
+        @media screen and (min-width: 768px)
+          flex-direction: row
+          +flex(center, space-between)
+          visibility: visible
+          height: auto
+          width: 70%
+          padding: 0
+          margin: 0 auto
+
+        a
+          color: white
+          font-weight: bold
+          text-decoration: none
+          text-transform: capitalize
+          margin: 5px 0
+          
+          &:first-of-type
+            @media screen and (min-width: 768px)
+              display: none
+
+          &:hover
+            text-decoration: underline
+
+        span
+          display: none
+          color: white
+          
+          @media screen and (min-width: 1000px)
+            display: block
+
+
+  .welcome
+    overflow: hidden
+    background-image: url("../img/welcome.jpg")
+    background-position: center
+    background-size: cover
+    box-shadow: 0 0 0 50vw rgba(0, 0, 0, 0.33) inset
+
+    //@media screen and (min-width: 1150px)
+    //  background: black
+
+    .container
+      position: relative
+      top: 15vw
+      color: white
+      text-align: center
+      text-shadow: 1px 1px 1px black
+
+      @media screen and (min-width: 768px)
+        height: 54.2vw
+        top: 120px
+
+      @media screen and (min-width: 1150px)
+        height: 600px
+        top: 155px
+
+      h1
+        font-size: 5vw
+
+        @media screen and (min-width: 768px)
+          font-size: 36px
+
+      h2
+        font-size: 4.5vw
+
+        @media screen and (min-width: 768px)
+          font-size: 32px
+
+      button
+        font-size: 3vw
+        //background-color: #794c90
+        background-color: black
+        color: #fff
+        border-radius: 25px
+        outline: none
+        border: 1px solid black
+        padding: 2.5vw 3vw
+        margin-top: 5vw
+
+        @media screen and (min-width: 600px)
+          font-size: 2.5vw
+
+        @media screen and (min-width: 768px)
+          font-size: 16px
+          padding: 15px 20px
+
+        @media screen and (min-width: 1150px)
+          margin-top: 25px
+
+        &:hover
+          cursor: pointer
+          //background-color: #6b437f
+          background: white
+          color: black
+
+          
+  .certificate
+    position: relative
+    background-color: rgba(0,0,0,0.03)
+
+    .container
+      width: 85%
+      margin: 5vw auto
+      padding: 2vw
+      background: white
+
+      &__photo
+
+      &__text
+
+        svg
+          margin-top: 3VW
+          width: 100%
+          font-size: 10vw
+          //color: #a365c2
+          color: black
+
+          @media screen and (min-width: 768px)
+            font-size: 5vw
+
+        .info
+
+          h3
+            text-align: center
+            font-size: 20px
+
+          p
+            text-align: center
+            font-size: 15px
+
+          p.delivery
+            font-weight: bold
+
+          ul
+            li
+              margin-left: 5vw
+              font-size: 15px
+
+            @media screen and (min-width: 420px)
+              display: flex
+              justify-content: space-evenly
+        a
+          text-decoration: none
+
+          button
+            margin: 20px auto
+            padding: 7px 25px
+            display: flex
+            //color: #a365c2
+            color: white
+            background: black
+            font-size: 14px
+            border-radius: 25px
+            outline: none
+            //border: 1px solid #a365c2
+            border: 1px solid black
+            font-weight: bold
+
+            @media screen and (min-width: 715px)
+              padding: 10px 40px
+
+            &:hover
+              cursor: pointer
+              //color: #7d3e9d
+              //border: 1px solid #7d3e9d
+              color: black
+              background-color: #f2f2f2
+
+
+  .services
+    //background-color: $bgSection
+    background-color: rgba(0, 0, 0, 0.18)
+    // or background: linear-gradient(0deg, rgb(151, 150, 153), #000000)
+
+    h2
+      text-align: center
+      //color: white
+      color: black
+
+    &__content, .content
+      width: 85%
+      margin: 0 auto
+      text-align: center
+
+      @media screen and (min-width: 768px)
+        +flex(unset, space-between)
+        flex-wrap: wrap
+
+      @media screen and (min-width: 1150px)
+        width: 1020px
+
+      &__item, .item
+        margin-bottom: 40px
+        background: white
+
+        @media screen and (min-width: 768px)
+          width: 39.5vw
+
+        @media screen and (min-width: 1150px)
+          width: 310px
+
+        &__img
+          height: 75vw
+          width: 100%
+          overflow: hidden
+
+          @media screen and (min-width: 768px)
+            height: 32vw
+
+          @media screen and (min-width: 1150px)
+            height: 250px
+
+          a
+
+            img
+              width: 100%
+              height: 100%
+              transform: scale(1)
+              transition: transform 0.3s linear
+
+              &:hover
+                transform: scale(1.03)
+                transition: 0.3s linear
+
+        p.name
+          font-size: 20px
+          font-weight: bold
+
+        p.price
+          font-size: 16px
+          font-weight: bold
+        a
+          button
+            +btn_service
+
+
+  .questions
+    min-height: 350px
+    position: relative
+    background-image: url("../img/question.jpg")
+    background-size: cover
+    background-position: center
+    box-shadow: 0 0 0 50vw rgba(0, 0, 0, 0.33) inset
+
+    &__container
+      position: relative
+      text-align: center
+      top: 100px
+      color: white
+      text-shadow: 1px 1px 1px black
+
+      //@media screen and (min-width: 390px)
+      //  top: 120px
+
+      //@media screen and (min-width: 1150px)
+      //  top: 100px
+
+      p.title
+        width: 90%
+        font-size: 24px
+        margin: 0 auto
+
+        @media screen and (min-width: 768px)
+          font-size: 28px
+
+        @media screen and (min-width: 1150px)
+          font-size: 32px
+
+      p.contact
+        width: 90%
+        margin: 15px auto 25px auto
+        font-size: 17px
+
+        @media screen and (min-width: 500px)
+          width: 424px
+
+        @media screen and (min-width: 768px)
+          margin: 25px auto 30px auto
+          width: 450px
+          font-size: 19px
+
+        @media screen and (min-width: 1150px)
+          font-size: 21px
+          width: 402px
+
+      a
+        button
+          padding: 7px 25px
+          font-size: 14px
+          //border: 1px solid #9d64ba
+          border: 1px solid black
+          border-radius: 5px
+          //background-color: #9d64ba
+          background-color: black
+          color: #fff
+          outline: none
+          transition: 0.3s
+
+          &:hover
+            cursor: pointer
+            //border: 1px solid #783a97
+            //background-color: #783a97
+            background-color: white
+            color: black
+            transition: 0.3s
+
+          @media screen and (min-width: 768px)
+            padding: 9px 30px
+            font-size: 15px
+            border-radius: 10px
+
+            @media screen and (min-width: 1150px)
+              padding: 10px 35px
+              font-size: 16px
+
+
+  .news
+    min-height: 250px
+    //background: linear-gradient(0deg,#e69627,#e337ef)
+    background: linear-gradient(0deg, rgba(163, 110, 36, 1), #000000)
+
+    h1
+      color: white
+      text-align: center
+
+
+    .accordion
+      +flex(unset, center)
+      margin: 12px auto
+      flex-wrap: wrap
+      font: 15px 'Trebuchet MS',sans-serif
+
+      @media screen and (min-width: 768px)
+        width: 90%
+
+      @media screen and (min-width: 1150px)
+        width: 84%
+
+      &__item, .item
+        width: 90%
+        margin: 15px auto
+
+        @media screen and (min-width: 768px)
+          width: 30%
+          min-width: 310px
+          margin: 15px
+
+        @media screen and (min-width: 1150px)
+          margin: 0 auto
+          min-width: 290px
+
+
+        &__head
+          background-color: white
+          cursor: pointer
+          padding: 2px 2px 2px 10px
+          font-weight: bold
+
+          @media screen and (min-width: 380px)
+            text-align: center
+            padding: 2px
+
+          &.active
+
+            p
+
+              &:before
+                transform: rotate(-41deg)
+                right: 11%
+
+              &:after
+                transform: rotate(41deg)
+                left: 90%
+
+          p
+            position: relative
+
+
+            &:before
+              transform: rotate(41deg)
+              right: 11%
+              margin-right: -4px
+
+              @media screen and (min-width: 550px) and (max-width: 767px)
+                margin-right: -7px
+
+            &:after
+              transform: rotate(-41deg)
+              left: 90%
+              margin-left: -4px
+
+              @media screen and (min-width: 550px) and (max-width: 767px)
+                margin-right: -2px
+
+            &:after, &:before
+              content: ""
+              display: block
+              width: 15px
+              height: 3px
+              border-radius: 0
+              background: currentColor
+              position: absolute
+              top: 50%
+              color: gainsboro
+              transition: transform .3s ease
+
+
+        &__body
+          text-align: center
+          background-color: white
+          display: none
+          padding: 4px
+
+
+  .galary
+    position: relative
+    //background-color: rgba(220, 139, 24, 0.2)
+    background-color: rgba(220, 139, 24, 0.2)
+
+    h1
+      text-align: center
+      font-family: serif
+
+    &__content, .content
+      width: 85%
+      margin: 0 auto 20px auto
+      +flex(unset, space-around)
+      flex-wrap: wrap
+
+      &__item
+        width: 100%
+        margin: 15px
+
+        @media screen and (min-width: 768px) and (max-width: 1150px)
+          width: 36.5vw
+          height: 30vw
+
+        @media screen and (min-width: 1150px)
+          width: 285px
+          height: 240px
+
+
+        a
+          img
+            width: 100%
+            height: 100%
+            transform: scale(1.0)
+            transition: transform 0.3s linear
+
+            &:hover
+              transform: scale(1.03)
+              transition: 0.3s linear
+
+
+  .team
+
+  .counts
+    min-height: 300px
+    display: flex
+    align-items: center
+    
+    .container
+      display: flex
+      justify-content: space-between
+      margin: 0 auto
+      width: 100%
+
+      @media screen and (min-width: 768px)
+        width: 85%
+
+      &__item
+        width: 30%
+        text-align: center
+
+      .circle
+        border-radius: 50%
+        background: black
+        width: 20vw
+        height: 20vw
+        display: inline-block
+        font-weight: bold
+        font-size: 4vw
+
+        @media screen and (min-width: 768px)
+          width: 160px
+          height: 160px
+          font-size: 30px
+          line-height: 160px
+
+
+        span
+          color: white
+          line-height: 5
+
+          @media screen and (min-width: 768px)
+            line-height: 1
+
+      .label
+        font-weight: 300
+        font-size: 16px
+
+        @media screen and (min-width: 768px)
+          font-size: 20px
+
+
+  .contacts
+    background: #e7e7e7
+
+    .map
+      position: relative
+      margin: 5px
+
+      @media screen and (min-width: 768px)
+        margin: 10px
+
+      iframe
+        width: 100%
+
+      .container
+        position: absolute
+        background: white
+        right: 2%
+        bottom: 15%
+        padding: 0 10px
+        opacity: 0.7
+        font-size: 14px
+        border: 1px solid black
+
+        @media screen and (min-width: 768px)
+          height: max-content
+          top: 2%
+          right: 11%
+          font-size: 16px
+          opacity: 0.9
+
+        &__title
+          p
+            font-weight: bold
+
+        &__dest
+          p>span:first-child
+            font-weight: bold
+
+
+  .footer
+    //background: rgba(56, 23, 87, 0.68)
+    //background: rgba(79, 8, 92, 0.87)
+    background-color: black
+
+    .info
+      margin-bottom: 0px
+      padding: 16px 0
+
+      @media screen and (min-width: 768px)
+        align-items: center
+
+      //@media screen and (min-width: 1150px)
+      //  align-items: baseline
+
+      &__logo
+        margin-top: 0px
+        //background-color: #e7e7e7
+        background-image: url("../img/footer_logo.png")
+
+        &:hover
+          transform: scale(1)
+
+      &__text
+        p
+          color: white
+          font-family: cursive
+
+      &__tel
+        flex-direction: column
+
+        p
+          color: #1f8ceb
+
+        .nets
+          width: 90px
+          margin: 10px auto 0 auto
+          display: flex
+          justify-content: space-between
+
+          @media screen and (min-width: 768px)
+            width: 50%
+
+          .insta, .facebook, .viber
+            width: 22px
+            height: 22px
+
+            @media screen and (min-width: 768px)
+              width: 27px
+              height: 27px
+            a
+              border: none
+
+              svg
+                width: 21px
+                height: 22px
+                color: white
+                transform: rotate(0deg)
+                margin: 0
+
+                @media screen and (min-width: 768px)
+                  width: 27px
+                  height: 25.5px
+
+          .insta
+            background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf)
+            border-radius: 6px
+
+            svg
+              &:hover
+                color: black
+
+          .facebook
+            background: #3b5998
+
+            &:hover
+              background: #1a3a7e
+
+          .viber
+            background: #8f5db7
+
+            &:hover
+              background: #59267c
+
+
+
+
+
+
+
+
+
+#myVideo
+  display: none
+
+  @media screen and (min-width: 1150px)
+    display: block
+    width: 100%
+    height: auto
+    position: absolute
+    right: 0
+    bottom: 0
+

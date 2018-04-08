@@ -1,0 +1,29 @@
+=flex($ai, $jc)
+  display: flex
+  align-items: $ai
+  justify-content: $jc
+
+=btn_service
+  padding: 7px 25px
+  font-size: 14px
+  color: white
+  //background-color: #9d64ba
+  //border: 1px solid #9d64ba
+  background-color: black
+  border-radius: 25px
+  margin-bottom: 20px
+  border: 1px solid black
+
+  &:hover
+    cursor: pointer
+    background: #f2f2f2
+    color: black
+    //background: #783a97
+    //border: 1px solid #783a97
+
+  &:hover,&:active,&:focus
+    outline: none
+
+  @media screen and (min-width: 715px)
+    padding: 10px 40px
+

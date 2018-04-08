@@ -1,0 +1,9 @@
+.welcome {
+  position: relative;
+  background-image: url("../img/welcome.jpg");
+  background-size: cover; }
+  .welcome .container {
+    color: white;
+    text-align: center; }
+    .welcome .container h1 {
+      font-size: 4vw; }
