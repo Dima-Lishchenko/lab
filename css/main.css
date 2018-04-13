@@ -293,10 +293,12 @@ body {
           .main .welcome .container h1 {
             font-size: 36px; } }
       .main .welcome .container h2 {
-        font-size: 4.5vw; }
+        width: 75%;
+        margin: 0 auto;
+        font-size: 4vw; }
         @media screen and (min-width: 768px) {
           .main .welcome .container h2 {
-            font-size: 32px; } }
+            font-size: 30px; } }
       .main .welcome .container button {
         font-size: 3vw;
         background-color: black;

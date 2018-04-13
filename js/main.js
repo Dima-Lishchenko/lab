@@ -119,3 +119,43 @@ $(document).ready(function(){
         }
     });
 });
+
+
+// type it for welcome section
+new TypeIt('h1.title', {
+    startDelay: 1000,
+    speed: 100,
+    cursorSpeed: 1000,
+    cursor: true,
+    loop: false,
+    autoStart: false
+});
+
+new TypeIt('h2.name', {
+    strings: ['Ирины Лучистой',
+              'Мы рады каждому клиенту!',
+              'Мы не делаем Вас красивыми, а лишь подчеркиваем то, что дала вам природа.'],
+    startDelay: 5000,
+    speed: 100,
+    cursorSpeed: 1000,
+    cursor: true,
+    breakLines: false,
+    nextStringDelay: 3000,
+    loop: true,
+    loopDelay: 5000,
+    autoStart: true
+});
+
+//scrollReveal
+window.sr = ScrollReveal();
+sr.reveal('.header', { duration: 1000, origin: 'top', distance: '100px', });
+sr.reveal('.welcome button', { duration: 3000, origin: 'left', distance: '400px', rotate: { x: 0, y: 0, z: 0 }, reset: true });
+sr.reveal('.certificate>.container', { duration: 2000, origin: 'right', distance: '300px', });
+sr.reveal('.questions button', { duration: 2000, origin: 'bottom', distance: '200px', rotate: { x: 0, y: 0, z: 0 }, reset: true });
+sr.reveal('.item:nth-of-type(even)', { duration: 1000, origin: 'right', distance: '200px', });
+sr.reveal('.item:nth-of-type(odd)', { duration: 1000, origin: 'left', distance: '200px', });
+sr.reveal('.accordion', { duration: 2000, origin: 'top', distance: '100px', });
+sr.reveal('.galary__content>.content__item:nth-of-type(even)', { duration: 2000, origin: 'top', distance: '100px' });
+sr.reveal('.galary__content>.content__item:nth-of-type(odd)', { duration: 2000, origin: 'bottom', distance: '100px' });
+sr.reveal('.footer', { duration: 1000, origin: 'bottom', distance: '200px', rotate: { x: 0, y: 0, z: 0 }, reset: true });
+sr.reveal('.nets', { duration: 2500, origin: 'right', distance: '200px', rotate: { x: 0, y: 0, z: 0 }, reset: true });
