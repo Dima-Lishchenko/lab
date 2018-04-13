@@ -103,10 +103,8 @@ $(document).ready(function(){
 
         var w_top = $(window).scrollTop();
         var e_top = $(countbox).offset().top;
-
         var w_height = $(window).height();
         var d_height = $(document).height();
-
         var e_height = $(countbox).outerHeight();
 
         if(w_top + 455 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
@@ -146,16 +144,18 @@ new TypeIt('h2.name', {
     autoStart: true
 });
 
+
 //scrollReveal
+
 window.sr = ScrollReveal();
 sr.reveal('.header', { duration: 1000, origin: 'top', distance: '100px', });
-sr.reveal('.welcome button', { duration: 3000, origin: 'left', distance: '400px', rotate: { x: 0, y: 0, z: 0 }, reset: true });
-sr.reveal('.certificate>.container', { duration: 2000, origin: 'right', distance: '300px', });
-sr.reveal('.questions button', { duration: 2000, origin: 'bottom', distance: '200px', rotate: { x: 0, y: 0, z: 0 }, reset: true });
-sr.reveal('.item:nth-of-type(even)', { duration: 1000, origin: 'right', distance: '200px', });
-sr.reveal('.item:nth-of-type(odd)', { duration: 1000, origin: 'left', distance: '200px', });
-sr.reveal('.accordion', { duration: 2000, origin: 'top', distance: '100px', });
+sr.reveal('.welcome button', { duration: 3000, origin: 'right', distance: '200px', rotate: { x: 0, y: 0, z: 0 }});
+sr.reveal('.certificate>.container', { duration: 2000, origin: 'right', distance: '0px' });
+sr.reveal('.questions button', { duration: 2000, origin: 'bottom', distance: '200px', rotate: { x: 0, y: 0, z: 0 }});
+sr.reveal('.item:nth-of-type(even)', { duration: 1000, origin: 'right', distance: '0px' });
+sr.reveal('.item:nth-of-type(odd)', { duration: 1000, origin: 'left', distance: '200px' });
+sr.reveal('.accordion', { duration: 2000, origin: 'top', distance: '100px' });
 sr.reveal('.galary__content>.content__item:nth-of-type(even)', { duration: 2000, origin: 'top', distance: '100px' });
 sr.reveal('.galary__content>.content__item:nth-of-type(odd)', { duration: 2000, origin: 'bottom', distance: '100px' });
-sr.reveal('.footer', { duration: 1000, origin: 'bottom', distance: '200px', rotate: { x: 0, y: 0, z: 0 }, reset: true });
-sr.reveal('.nets', { duration: 2500, origin: 'right', distance: '200px', rotate: { x: 0, y: 0, z: 0 }, reset: true });
+sr.reveal('.footer', { duration: 1000, origin: 'bottom', distance: '200px'});
+sr.reveal('.nets', { duration: 2500, origin: 'right', distance: '200px'});
