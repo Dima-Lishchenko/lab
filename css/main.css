@@ -38,11 +38,12 @@ body {
   margin: 0 auto;
   border: 1px solid black;
   font-family: Roboto, Helvetica, Verdana, sans-serif; }
+  .main section, .main header, .main footer {
+    overflow: hidden; }
   .main section {
     position: relative;
     min-height: 70vw;
     width: 100%;
-    overflow: hidden;
     border: 1px solid black; }
     @media screen and (min-width: 768px) {
       .main section {
