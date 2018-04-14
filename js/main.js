@@ -131,8 +131,10 @@ new TypeIt('h1.title', {
 
 new TypeIt('h2.name', {
     strings: ['Ирины Лучистой',
-              'Мы рады каждому клиенту!',
-              'Мы не делаем Вас красивыми, а лишь подчеркиваем то, что дала вам природа.'],
+              'Всегда в курсе последних тенденций.',
+              'Рады каждому клиенту!',
+              'Только лучшие мастера.',
+              'Делаем Вас красивыми, подчеркивая то, что дала природа.'],
     startDelay: 5000,
     speed: 100,
     cursorSpeed: 1000,
@@ -144,11 +146,20 @@ new TypeIt('h2.name', {
     autoStart: false
 });
 
+new TypeIt('h2.title', {
+    startDelay: 1000,
+    speed: 100,
+    cursorSpeed: 1000,
+    cursor: true,
+    loop: false,
+    autoStart: false
+});
+
 
 //scrollReveal
 
 window.sr = ScrollReveal();
-sr.reveal('.header', { duration: 1000, origin: 'top', distance: '100px', });
+sr.reveal('.header .info', { duration: 1000, origin: 'top', distance: '100px', });
 sr.reveal('.welcome button', { duration: 3000, origin: 'right', distance: '200px', rotate: { x: 0, y: 0, z: 0 }});
 sr.reveal('.certificate .container__text', { duration: 2000, origin: 'bottom', distance: '100px' });
 sr.reveal('.questions button', { duration: 2000, origin: 'bottom', distance: '200px', rotate: { x: 0, y: 0, z: 0 }});
@@ -157,5 +168,5 @@ sr.reveal('.accordion', { duration: 2000, origin: 'top', distance: '10px' });
 sr.reveal('.galary__content>.content__item:nth-of-type(even)', { duration: 2500, origin: 'top', distance: '100px' });
 sr.reveal('.galary__content>.content__item:nth-of-type(odd)', { duration: 2500, origin: 'bottom', distance: '100px' });
 sr.reveal('.galary img', { duration: 3000, origin: 'right', distance: '100px'});
-sr.reveal('.footer', { duration: 1000, origin: 'bottom', distance: '200px'});
+sr.reveal('.footer .info', { duration: 1000, origin: 'bottom', distance: '200px'});
 sr.reveal('.nets', { duration: 2500, origin: 'right', distance: '100px'});

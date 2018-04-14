@@ -268,6 +268,7 @@ body {
             .main .header .menu__container span, .main .footer .menu__container span {
               display: block; } }
   .main .welcome {
+    min-height: 80vw;
     overflow: hidden;
     background-image: url("../img/welcome.jpg");
     background-position: center;
@@ -275,7 +276,7 @@ body {
     box-shadow: 0 0 0 50vw rgba(0, 0, 0, 0.33) inset; }
     .main .welcome .container {
       position: relative;
-      top: 15vw;
+      top: 20vw;
       color: white;
       text-align: center;
       text-shadow: 1px 1px 1px black; }
@@ -293,7 +294,7 @@ body {
           .main .welcome .container h1 {
             font-size: 36px; } }
       .main .welcome .container h2 {
-        width: 75%;
+        width: 77%;
         margin: 0 auto;
         font-size: 4vw; }
         @media screen and (min-width: 768px) {
@@ -506,7 +507,7 @@ body {
   .main .news {
     min-height: 250px;
     background: linear-gradient(0deg, #a36e24, #000000); }
-    .main .news h1 {
+    .main .news h2 {
       color: white;
       text-align: center; }
     .main .news .accordion {
@@ -584,7 +585,7 @@ body {
   .main .galary {
     position: relative;
     background-color: rgba(220, 139, 24, 0.2); }
-    .main .galary h1 {
+    .main .galary h2 {
       text-align: center;
       font-family: serif; }
     .main .galary__content, .main .galary .content {
@@ -614,11 +615,12 @@ body {
             transform: scale(1.03);
             transition: 0.3s linear; }
   .main .counts {
-    min-height: 300px;
-    display: flex;
-    align-items: center; }
+    min-height: 240px; }
+    .main .counts h2 {
+      text-align: center; }
     .main .counts .container {
       display: flex;
+      align-items: baseline;
       justify-content: space-between;
       margin: 0 auto;
       width: 100%; }
