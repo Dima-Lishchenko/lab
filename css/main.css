@@ -352,11 +352,14 @@ body {
       .main .certificate .container__text .info p.delivery {
         font-weight: bold; }
       .main .certificate .container__text .info ul {
-        font-size: 15px; }
+        font-size: 4vw; }
         @media screen and (min-width: 420px) {
           .main .certificate .container__text .info ul {
             display: flex;
             justify-content: space-evenly; } }
+        @media screen and (min-width: 768px) {
+          .main .certificate .container__text .info ul {
+            font-size: 16px; } }
       .main .certificate .container__text a {
         text-decoration: none; }
         .main .certificate .container__text a button {
