@@ -352,7 +352,7 @@ body {
       .main .certificate .container__text .info p.delivery {
         font-weight: bold; }
       .main .certificate .container__text .info ul {
-        font-size: 4vw; }
+        font-size: 18px; }
         @media screen and (min-width: 420px) {
           .main .certificate .container__text .info ul {
             display: flex;
