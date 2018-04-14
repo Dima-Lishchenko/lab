@@ -160,13 +160,13 @@ new TypeIt('h2.title', {
 
 window.sr = ScrollReveal();
 sr.reveal('.header .info', { duration: 1000, origin: 'top', distance: '100px', });
-sr.reveal('.welcome button', { duration: 3000, origin: 'right', distance: '200px', rotate: { x: 0, y: 0, z: 0 }});
+    sr.reveal('.welcome button', { duration: 3000, origin: 'right', distance: '200px', rotate: { x: 0, y: 0, z: 0 }});
 sr.reveal('.certificate .container__text', { duration: 2000, origin: 'bottom', distance: '100px' });
 sr.reveal('.questions button', { duration: 2000, origin: 'bottom', distance: '200px', rotate: { x: 0, y: 0, z: 0 }});
 sr.reveal('.item', { duration: 2000, origin: 'left', distance: '200px' });
 sr.reveal('.accordion', { duration: 2000, origin: 'top', distance: '10px' });
 sr.reveal('.galary__content>.content__item:nth-of-type(even)', { duration: 2500, origin: 'top', distance: '100px' });
 sr.reveal('.galary__content>.content__item:nth-of-type(odd)', { duration: 2500, origin: 'bottom', distance: '100px' });
-sr.reveal('.galary img', { duration: 3000, origin: 'right', distance: '100px'});
-sr.reveal('.footer .info', { duration: 2000, origin: 'left', distance: '200px'});
-sr.reveal('.footer .info .nets', { duration: 2500, origin: 'right', distance: '100px'});
+sr.reveal('.galary img', { duration: 2000, origin: 'left', distance: '100px'});
+sr.reveal('.footer .info', { duration: 1500, origin: 'left', distance: '200px'});
+sr.reveal('.footer .info .nets', { duration: 3000, origin: 'right', distance: '200px'});
