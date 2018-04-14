@@ -169,4 +169,4 @@ sr.reveal('.galary__content>.content__item:nth-of-type(even)', { duration: 2500,
 sr.reveal('.galary__content>.content__item:nth-of-type(odd)', { duration: 2500, origin: 'bottom', distance: '100px' });
 sr.reveal('.galary img', { duration: 3000, origin: 'right', distance: '100px'});
 sr.reveal('.footer .info', { duration: 2000, origin: 'left', distance: '200px'});
-sr.reveal('.nets', { duration: 2500, origin: 'right', distance: '100px'});
+sr.reveal('.footer .info .nets', { duration: 2500, origin: 'right', distance: '100px'});
