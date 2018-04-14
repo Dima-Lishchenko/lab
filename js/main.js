@@ -166,16 +166,8 @@ sr.reveal('.questions button', { duration: 2000, origin: 'bottom', distance: '20
 sr.reveal('.item', { duration: 2000, origin: 'left', distance: '200px' });
 sr.reveal('.accordion', { duration: 2000, origin: 'top', distance: '10px' });
 sr.reveal('.galary__content>.content__item:nth-of-type(even)', { duration: 2500, origin: 'top', distance: '100px' });
-sr.reveal('.galary__content>.content__item:nth-of-type(odd)', { duration: 2500, origin: 'bottom', distance: '100px' });
+sr.reveal('.galary__content>.content__item:nth-of-type(odd)', { duration: 2500, origin: 'right', distance: '100px' });
 sr.reveal('.galary img', { duration: 2000, origin: 'left', distance: '100px'});
-sr.reveal('.footer .info .nets', { duration: 2500, origin: 'right', mobile: true, distance: '100px'});
-
-sr.reveal('.footer .info', { duration: 1500, origin: 'left', distance: '200px'});
-
-$(document).ready(function(){
-    $('footer').css('width',$(window).width());
-    $(window).resize(function(){
-        $('footer').css('width',$(window).width());
-        /* and in your CSS: section { overflow: hidden; } */
-    });
-});
+sr.reveal('.footer .info__text, a.info__logo, .info__tel>a', { duration: 2000, origin: 'left', distance: '200px'});
+sr.reveal('.footer .info .nets', { duration: 3000, origin: 'right', distance: '100px'});
+sr.reveal('.footer .info a.info__logo', { duration: 2000, origin: 'top', distance: '100px'});
