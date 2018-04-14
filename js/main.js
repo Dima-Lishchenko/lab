@@ -147,7 +147,7 @@ new TypeIt('h2.name', {
 });
 
 new TypeIt('h2.title', {
-    startDelay: 1000,
+    startDelay: 500,
     speed: 100,
     cursorSpeed: 1000,
     cursor: true,
@@ -168,5 +168,5 @@ sr.reveal('.accordion', { duration: 2000, origin: 'top', distance: '10px' });
 sr.reveal('.galary__content>.content__item:nth-of-type(even)', { duration: 2500, origin: 'top', distance: '100px' });
 sr.reveal('.galary__content>.content__item:nth-of-type(odd)', { duration: 2500, origin: 'bottom', distance: '100px' });
 sr.reveal('.galary img', { duration: 3000, origin: 'right', distance: '100px'});
-sr.reveal('.footer .info', { duration: 1000, origin: 'bottom', distance: '200px'});
+sr.reveal('.footer .info', { duration: 1000, origin: 'left', distance: '200px'});
 sr.reveal('.nets', { duration: 2500, origin: 'right', distance: '100px'});
